@@ -1,0 +1,217 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache ServiceMix
+
+
+From: 'an unknown organization'
+  - AOP alliance (http://aopalliance.sourceforge.net) aopalliance:aopalliance:jar:1.0
+    License: Public Domain 
+  - cglib (http://cglib.sourceforge.net/) cglib:cglib-nodep:jar:2.1_3
+
+  - commons-beanutils-core  commons-beanutils:commons-beanutils-core:jar:1.7.0
+
+  - CLI  commons-cli:commons-cli:jar:1.0
+
+  - Streaming API for XML  javax.xml.stream:stax-api:jar:1.0-2
+    License: GNU General Public Library  (http://www.gnu.org/licenses/gpl.txt)    License: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0  (http://www.sun.com/cddl/cddl.html)
+  - lucene  lucene:lucene:jar:1.4.3
+
+  - mx4j  mx4j:mx4j:jar:3.0.1
+
+  - mx4j-remote  mx4j:mx4j-remote:jar:3.0.1
+
+  - OGNL (http://www.ognl.org/) ognl:ognl:jar:2.6.9
+    License: BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+  - oro  oro:oro:jar:2.0.8
+
+  - regexp  regexp:regexp:jar:1.3
+
+  - StAX API (http://stax.codehaus.org/) stax:stax-api:jar:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - xpp3 (http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/) xpp3:xpp3:jar:1.1.3.4.O
+
+
+From: 'Apache Software Foundation' (http://www.apache.org)
+  - commons-collections  commons-collections:commons-collections:jar:3.1
+
+  - Log4j (http://logging.apache.org/log4j/docs/) log4j:log4j:jar:1.2.14
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Activation 1.1 (http://geronimo.apache.org/specs/geronimo-activation_1.1_spec) org.apache.geronimo.specs:geronimo-activation_1.1_spec:jar:1.0.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - EJB 3.0 (http://geronimo.apache.org/specs/geronimo-ejb_3.0_spec) org.apache.geronimo.specs:geronimo-ejb_3.0_spec:jar:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE Connector 1.5 (http://geronimo.apache.org/specs/geronimo-j2ee-connector_1.5_spec) org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:2.0.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE JACC 1.0 (http://geronimo.apache.org/specs/geronimo-j2ee-jacc_1.0_spec) org.apache.geronimo.specs:geronimo-j2ee-jacc_1.0_spec:jar:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE Management 1.0 (http://geronimo.apache.org/specs/geronimo-j2ee-management_1.0_spec) org.apache.geronimo.specs:geronimo-j2ee-management_1.0_spec:jar:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE Management 1.1 (http://geronimo.apache.org/specs/geronimo-j2ee-management_1.1_spec) org.apache.geronimo.specs:geronimo-j2ee-management_1.1_spec:jar:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - J2EE JACC 1.1 (http://geronimo.apache.org/specs/geronimo-jacc_1.1_spec) org.apache.geronimo.specs:geronimo-jacc_1.1_spec:jar:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JMS 1.1 (http://geronimo.apache.org/specs/geronimo-jms_1.1_spec) org.apache.geronimo.specs:geronimo-jms_1.1_spec:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JTA 1.0.1B (http://geronimo.apache.org/specs/geronimo-jta_1.0.1B_spec) org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec:jar:1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JTA 1.1 (http://geronimo.apache.org/specs/geronimo-jta_1.1_spec) org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Streaming API for XML (STAX API 1.0) (http://geronimo.apache.org/specs/geronimo-stax-api_1.0_spec) org.apache.geronimo.specs:geronimo-stax-api_1.0_spec:bundle:1.0.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Apache Software Foundation' (http://www.apache.org/)
+  - ActiveIO :: Core (http://activemq.apache.org/activeio-core/) org.apache.activemq:activeio-core:jar:3.1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Xerces2 Java Parser (http://xerces.apache.org/xerces2-j/) xerces:xercesImpl:jar:2.8.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Codehaus' (http://www.codehaus.org/)
+  - Stax2 API (http://woodstox.codehaus.org/StAX2) org.codehaus.woodstox:stax2-api:jar:3.0.1
+    License: The BSD License  (http://www.opensource.org/licenses/bsd-license.php)
+  - Woodstox (http://woodstox.codehaus.org) org.codehaus.woodstox:woodstox-core-asl:jar:4.0.7
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Woodstox (http://woodstox.codehaus.org) org.codehaus.woodstox:wstx-asl:jar:3.2.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Woodstox (http://woodstox.codehaus.org) woodstox:wstx-asl:jar:3.2.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Dawid Kurzyniec' (http://www.mathcs.emory.edu/~dawidk/)
+  - Backport of JSR 166 (http://www.mathcs.emory.edu/dcl/util/backport-util-concurrent/) backport-util-concurrent:backport-util-concurrent:jar:2.1
+    License: Public Domain  (http://creativecommons.org/licenses/publicdomain)
+
+From: 'Extreme! Lab, Indiana University' (http://www.extreme.indiana.edu/)
+  - MXP1: Xml Pull Parser 3rd Edition (XPP3) (http://www.extreme.indiana.edu/xgws/xsoap/xpp/mxp1/) xpp3:xpp3_min:jar:1.1.4c
+    License: Indiana University Extreme! Lab Software License, vesion 1.1.1  (http://www.extreme.indiana.edu/viewcvs/~checkout~/XPP3/java/LICENSE.txt)    License: Public Domain  (http://creativecommons.org/licenses/publicdomain)
+
+From: 'JUnit' (http://www.junit.org)
+  - JUnit (http://junit.org) junit:junit:jar:4.4
+    License: Common Public License Version 1.0  (http://www.opensource.org/licenses/cpl1.0.txt)
+
+From: 'LogicBlaze, Inc.' (http://www.logicblaze.com/)
+  - Jencks  org.jencks:jencks:bundle:2.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'ObjectWeb' (http://www.objectweb.org/)
+  - ASM Core (http://asm.objectweb.org/asm/) asm:asm:jar:3.1
+
+  - ASM Commons (http://asm.objectweb.org/asm-commons/) asm:asm-commons:jar:3.1
+
+
+From: 'ObjectWeb HOWL' (http://forge.objectweb.org/projects/howl)
+  - HOWL logger (http://forge.objectweb.org/projects/howl/) org.objectweb.howl:howl:jar:1.0.1-1
+    License: BSD 
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.4.3
+
+
+From: 'Spring Framework' (http://www.springframework.org/)
+  - Spring Framework: AOP (http://www.springframework.org) org.springframework:spring-aop:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: Beans (http://www.springframework.org) org.springframework:spring-beans:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: Context (http://www.springframework.org) org.springframework:spring-context:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: Context Support (http://www.springframework.org) org.springframework:spring-context-support:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: Core (http://www.springframework.org) org.springframework:spring-core:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: JMS (http://www.springframework.org) org.springframework:spring-jms:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Spring Framework: Transaction (http://www.springframework.org) org.springframework:spring-tx:jar:2.5.6
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Sun Microsystems' (http://www.sun.com/)
+  - Sun JAXB Reference Implementation Runtime  com.sun.xml.bind:jaxb-impl:jar:2.1.12:compile
+    License: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0  (http://www.sun.com/cddl/cddl.html)
+  - Java Architecture for XML Binding (JAXB API)  javax.xml.bind:jaxb-api:jar:2.1:compile
+    License: COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0  (http://www.sun.com/cddl/cddl.html)
+
+From: 'The Apache Geronimo development community' (http://geronimo.apache.org/)
+  - Geronimo Framework, Modules :: CLI (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-cli) org.apache.geronimo.framework:geronimo-cli:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Common (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-common) org.apache.geronimo.framework:geronimo-common:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Core (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-core) org.apache.geronimo.framework:geronimo-core:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Crypto (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-crypto) org.apache.geronimo.framework:geronimo-crypto:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Interceptor (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-interceptor) org.apache.geronimo.framework:geronimo-interceptor:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: J2EE (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-j2ee) org.apache.geronimo.framework:geronimo-j2ee:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Kernel (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-kernel) org.apache.geronimo.framework:geronimo-kernel:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Management API (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-management) org.apache.geronimo.framework:geronimo-management:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Naming (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-naming) org.apache.geronimo.framework:geronimo-naming:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: Security (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-security) org.apache.geronimo.framework:geronimo-security:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Framework, Modules :: System (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/framework/modules/geronimo-system) org.apache.geronimo.framework:geronimo-system:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Plugins, Connector :: Core (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/plugins/connector/geronimo-connector) org.apache.geronimo.modules:geronimo-connector:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo Plugins, Connector :: Transaction (http://geronimo.apache.org/maven/geronimo-2.1.4/2.1.4/plugins/connector/geronimo-transaction) org.apache.geronimo.modules:geronimo-transaction:jar:2.1.4
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Commons DBCP (http://jakarta.apache.org/commons/dbcp/) commons-dbcp:commons-dbcp:jar:1.2
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Commons JEXL (http://jakarta.apache.org/commons/jexl/) commons-jexl:commons-jexl:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Lang (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-lang:commons-lang:jar:2.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Logging (http://jakarta.apache.org/commons/logging/) commons-logging:commons-logging-api:jar:1.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Jakarta Commons Net (http://jakarta.apache.org/commons/${pom.artifactId.substring(8)}/) commons-net:commons-net:jar:1.4.1
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+  - Commons Pool (http://jakarta.apache.org/commons/pool/) commons-pool:commons-pool:jar:1.2
+    License: The Apache Software License, Version 2.0  (/LICENSE.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org)
+  - Geronimo TxManager :: Connector (http://geronimo.apache.org/maven/txmanager/2.1.2/geronimo-connector) org.apache.geronimo.components:geronimo-connector:jar:2.1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Geronimo TxManager :: Transaction (http://geronimo.apache.org/maven/txmanager/2.1.2/geronimo-transaction) org.apache.geronimo.components:geronimo-transaction:jar:2.1.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Xalan-Java  xalan:xalan:jar:2.7.0:compile
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XML APIs (http://xml.apache.org/commons/components/external/xml-apis) xml-apis:xml-apis:jar:1.3.04:compile
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons Logging (http://commons.apache.org/logging) commons-logging:commons-logging:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: Core (http://activemq.apache.org/activemq-core) org.apache.activemq:activemq-core:bundle:5.3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: Pool (http://activemq.apache.org/activemq-pool) org.apache.activemq:activemq-pool:bundle:5.3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ :: KahaDB (http://activemq.apache.org/kahadb) org.apache.activemq:kahadb:bundle:5.3.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ActiveMQ Protocol Buffers Implementation and Compiler (http://activemq.apache.org/activemq-protobuf) org.apache.activemq.protobuf:activemq-protobuf:maven-plugin:1.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ServiceMix :: Core (http://servicemix.apache.org/servicemix/parent/core/servicemix-core/) org.apache.servicemix:servicemix-core:jar:3.3.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache ServiceMix :: Utils (http://servicemix.apache.org/servicemix-utils/) org.apache.servicemix:servicemix-utils:bundle:1.2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache ServiceMix Specs :: JBI API 1.0 (http://servicemix.apache.org/specs/org.apache.servicemix.specs.jbi-api-1.0/) org.apache.servicemix.specs:org.apache.servicemix.specs.jbi-api-1.0:bundle:1.4.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Classloader (http://geronimo.apache.org/xbean/xbean-classloader) org.apache.xbean:xbean-classloader:bundle:3.4.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Naming (http://geronimo.apache.org/xbean/xbean-naming) org.apache.xbean:xbean-naming:bundle:3.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Reflect (http://geronimo.apache.org/xbean/xbean-reflect) org.apache.xbean:xbean-reflect:bundle:3.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache XBean :: Spring (http://geronimo.apache.org/xbean/xbean-spring) org.apache.xbean:xbean-spring:bundle:3.4.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'XStream' (http://xstream.codehaus.org)
+  - XStream Core  com.thoughtworks.xstream:xstream:jar:1.3
+    License: BSD style  (http://xstream.codehaus.com/license.html)
+
+
+
+

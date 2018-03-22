@@ -1,0 +1,23 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+MyFaces Extensions-CDI JSF 1.2 Module Impl
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - MyFaces Extensions-CDI Core-API (http://myfaces.apache.org/extensions/cdi/core-project/myfaces-extcdi-core-api/) org.apache.myfaces.extensions.cdi.core:myfaces-extcdi-core-api:jar:1.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - MyFaces Extensions-CDI Core-Impl (http://myfaces.apache.org/extensions/cdi/core-project/myfaces-extcdi-core-impl/) org.apache.myfaces.extensions.cdi.core:myfaces-extcdi-core-impl:jar:1.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - MyFaces Extensions-CDI JSF 1.2 Module API (http://myfaces.apache.org/extensions/cdi/jee-modules-project/jsf12-module-project/myfaces-extcdi-jsf12-module-api/) org.apache.myfaces.extensions.cdi.modules:myfaces-extcdi-jsf12-module-api:jar:1.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - MyFaces Extensions-CDI I18N Message 1.0 Module API (http://myfaces.apache.org/extensions/cdi/jse-modules-project/message-module-project/myfaces-extcdi-message-module-api/) org.apache.myfaces.extensions.cdi.modules:myfaces-extcdi-message-module-api:jar:1.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - MyFaces Extensions-CDI I18N Message 1.0 Module Impl (http://myfaces.apache.org/extensions/cdi/jse-modules-project/message-module-project/myfaces-extcdi-message-module-impl/) org.apache.myfaces.extensions.cdi.modules:myfaces-extcdi-message-module-impl:jar:1.0.5
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

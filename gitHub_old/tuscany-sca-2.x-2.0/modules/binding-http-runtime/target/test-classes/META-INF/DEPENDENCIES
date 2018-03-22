@@ -1,0 +1,45 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache Tuscany SCA HTTP Binding Runtime
+
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Tuscany SCA Assembly Model (http://tuscany.apache.org/tuscany-modules/tuscany-assembly) org.apache.tuscany.sca:tuscany-assembly:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Assembly XML Model (http://tuscany.apache.org/tuscany-modules/tuscany-assembly-xml) org.apache.tuscany.sca:tuscany-assembly-xml:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Assembly Model XSD Files (http://tuscany.apache.org/tuscany-modules/tuscany-assembly-xsd) org.apache.tuscany.sca:tuscany-assembly-xsd:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA HTTP Binding Model (http://tuscany.apache.org/tuscany-modules/tuscany-binding-http) org.apache.tuscany.sca:tuscany-binding-http:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Common HTTP (http://tuscany.apache.org/tuscany-modules/tuscany-common-http) org.apache.tuscany.sca:tuscany-common-http:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Common Java (http://tuscany.apache.org/tuscany-modules/tuscany-common-java) org.apache.tuscany.sca:tuscany-common-java:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Common XML (http://tuscany.apache.org/tuscany-modules/tuscany-common-xml) org.apache.tuscany.sca:tuscany-common-xml:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Contribution Model (http://tuscany.apache.org/tuscany-modules/tuscany-contribution) org.apache.tuscany.sca:tuscany-contribution:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Core SPI (http://tuscany.apache.org/tuscany-modules/tuscany-core-spi) org.apache.tuscany.sca:tuscany-core-spi:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA DataBinding Framework (http://tuscany.apache.org/tuscany-modules/tuscany-databinding) org.apache.tuscany.sca:tuscany-databinding:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Extensibility (http://tuscany.apache.org/tuscany-modules/tuscany-extensibility) org.apache.tuscany.sca:tuscany-extensibility:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA HTTP Servlet Host Extension Point (http://tuscany.apache.org/tuscany-modules/tuscany-host-http) org.apache.tuscany.sca:tuscany-host-http:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA Monitor (http://tuscany.apache.org/tuscany-modules/tuscany-monitor) org.apache.tuscany.sca:tuscany-monitor:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA API (http://tuscany.apache.org/tuscany-modules/tuscany-sca-api) org.apache.tuscany.sca:tuscany-sca-api:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Tuscany SCA XSD Model (http://tuscany.apache.org/tuscany-modules/tuscany-xsd) org.apache.tuscany.sca:tuscany-xsd:jar:2.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XmlSchema (http://ws.apache.org/commons/XmlSchema) org.apache.ws.commons.schema:XmlSchema:jar:1.4.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

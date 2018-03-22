@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project projectInfo="org.apache.wink:wink-client-asynchttpclient:1.3.0@D:\ws\final_3\gitHub_old\wink-wink-1.3.0-RC1\wink-client-asynchttpclient\pom.xml">
+  <conflicts type="jar">
+    <conflict groupId:artifactId="javax.xml.bind:jaxb-api" versions="2.2/2.2.1" riskLevel="1">
+      <versions>
+        <version versionId="2.2.1" loaded="false">
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + org.apache.wink:wink-client:1.3.0::compile + com.sun.xml.bind:jaxb-impl:2.2.1.1::compile + javax.xml.bind:jaxb-api:2.2.1::compile</path>
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + org.apache.wink:wink-client:1.3.0::compile + org.apache.wink:wink-common:1.3.0::compile + javax.xml.bind:jaxb-api:2.2.1::compile</path>
+        </version>
+        <version versionId="2.2" loaded="true">
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + org.apache.wink:wink-client:1.3.0::compile + javax.xml.bind:jaxb-api:2.2::compile</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+    <conflict groupId:artifactId="junit:junit" versions="4.8.1/3.8.2" riskLevel="1">
+      <versions>
+        <version versionId="4.8.1" loaded="true">
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + org.apache.wink:wink-component-test-support:1.3.0::test + junit:junit:4.8.1::test</path>
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + junit:junit:4.8.1::test</path>
+        </version>
+        <version versionId="3.8.2" loaded="false">
+          <path>org.apache.wink:wink-client-asynchttpclient:1.3.0:: + org.jmock:jmock-junit3:2.5.1::test + junit:junit:3.8.2::test</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+  </conflicts>
+</project>

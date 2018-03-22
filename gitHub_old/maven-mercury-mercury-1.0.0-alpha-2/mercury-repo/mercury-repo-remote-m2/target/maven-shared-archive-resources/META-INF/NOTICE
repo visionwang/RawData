@@ -1,0 +1,51 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,
+// Version 2.0, in this case for Mercury Remote M2 Repository
+// ------------------------------------------------------------------
+
+Mercury Remote M2 Repository
+Copyright 2002-2018 The Apache Software Foundation
+
+This product includes/uses software(s) developed by 'an unknown organization'
+  - bcpg-jdk15
+  - Legion of the Bouncy Castle Java Cryptography APIs (http://www.bouncycastle.org/java.html)
+  - log4j
+  - Plexus language bundle access component
+
+This product includes/uses software(s) developed by 'Apache Software Foundation' (http://www.apache.org)
+  - CLI (http://jakarta.apache.org/commons/cli/)
+
+This product includes/uses software(s) developed by 'Codehaus' (http://www.codehaus.org/)
+  - Plexus Classworlds
+  - Plexus :: Default Container
+  - Plexus Common Utilities (http://plexus.codehaus.org/plexus-utils)
+
+This product includes/uses software(s) developed by 'Google' (http://www.google.com)
+  - google-collect (http://code.google.com/p/google-collections/)
+
+This product includes/uses software(s) developed by 'Mort Bay Consulting' (http://www.mortbay.com)
+  - Jetty Server (http://jetty.mortbay.org/project/modules/jetty)
+  - Jetty HTTP Client (http://jetty.mortbay.org/project/jetty-client)
+  - Jetty SSLEngine (http://jetty.mortbay.org)
+  - Jetty Utilities (http://jetty.mortbay.org/project/jetty-util)
+  - Servlet Specification 2.5 API (http://jetty.mortbay.org/project/modules/servlet-api-2.5)
+
+This product includes/uses software(s) developed by 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Logging (http://jakarta.apache.org/commons/logging/)
+
+This product includes/uses software(s) developed by 'The Apache Software Foundation' (http://www.apache.org/)
+  - Mercury Artifact (http://maven.apache.org/mercury/mercury-artifact/)
+  - Mercury Crypto APIs (http://maven.apache.org/mercury/mercury-crypto/mercury-crypto-api/)
+  - Mercury Crypto Basics (http://maven.apache.org/mercury/mercury-crypto/mercury-crypto-basic/)
+  - Mercury Event Framework (http://maven.apache.org/mercury/mercury-event/)
+  - Mercury External Dependencies (http://maven.apache.org/mercury/mercury-external/)
+  - Mercury Logging (http://maven.apache.org/mercury/mercury-logging/)
+  - Mercury Shared Metadata (http://maven.apache.org/mercury/mercury-md/mercury-md-shared/)
+  - Mercury Repository APIs (http://maven.apache.org/mercury/mercury-repo/mercury-repo-api/)
+  - Mercury Local M2 Repository (http://maven.apache.org/mercury/mercury-repo/mercury-repo-local-m2/)
+  - Mercury Transport APIs (http://maven.apache.org/mercury/mercury-transport/mercury-transport-api/)
+  - Mercury Jetty HTTP Transport (http://maven.apache.org/mercury/mercury-transport/mercury-transport-http/)
+  - Mercury Shared Utilities (http://maven.apache.org/mercury/mercury-util/)
+  - Apache XBean :: Reflect (http://geronimo.apache.org/xbean/xbean-reflect)
+
+

@@ -1,0 +1,8 @@
+asm:asm-xml:3.0
+org.apache.maven.plugins:maven-antrun-plugin:1.2
+org.apache.maven.plugins:maven-assembly-plugin:2.1
+org.apache.maven.plugins:maven-changelog-plugin:2.1
+org.apache.maven.plugins:maven-checkstyle-plugin:2.1
+org.apache.maven.plugins:maven-clean-plugin:2.2
+org.apache.maven.plugins:maven-compiler-plugin:2.0.2
+org.apache.maven.plugins:maven-surefire-report-plugin:2.4.3

@@ -1,0 +1,9 @@
+http\://servicemix.apache.org/audit/1.0/servicemix-audit.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.1.2.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.2.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.2.1.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.2.2.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.2.3.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.3.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.3.1.xsd=servicemix-audit.xsd
+http\://servicemix.apache.org/schema/servicemix-audit-3.3.2.xsd=servicemix-audit.xsd

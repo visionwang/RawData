@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project projectInfo="org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0@D:\ws\final_3\gitHub_old\tuscany-sca-2.x-2.0\modules\binding-rest-runtime\pom.xml">
+  <conflicts type="jar">
+    <conflict groupId-artifactId="org.codehaus.jackson:jackson-mapper-asl" versions="1.9.4/1.7.4" riskLevel="3">
+      <versions>
+        <version versionId="1.7.4" loaded="false">
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + org.apache.tuscany.sca:tuscany-databinding-json:2.0::compile + com.fasterxml:jackson-module-json-org:0.9.1::compile + org.codehaus.jackson:jackson-mapper-asl:1.7.4::compile</path>
+        </version>
+        <version versionId="1.9.4" loaded="true">
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + org.apache.tuscany.sca:tuscany-databinding-json:2.0::compile + org.codehaus.jackson:jackson-xc:1.9.4::compile + org.codehaus.jackson:jackson-mapper-asl:1.9.4::compile</path>
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + org.apache.tuscany.sca:tuscany-databinding-json:2.0::compile + org.codehaus.jackson:jackson-mapper-asl:1.9.4::compile</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !">
+        <RiskMthd>org.codehaus.jackson.map.type.TypeBindings: void init (java.lang.Class)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.MapperConfig$Impl: org.codehaus.jackson.map.introspect.VisibilityChecker getDefaultVisibilityChecker()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.IntNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.BooleanNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.POJONode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.CollectionType: org.codehaus.jackson.type.JavaType containedType(int)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.ObjectMapper$DefaultTyping: int ordinal()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.MapType: org.codehaus.jackson.type.JavaType containedType(int)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.CollectionType: int containedTypeCount()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.LongNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.BigIntegerNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.ser.JsonValueSerializer: java.lang.String toString()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.CollectionType: java.lang.String buildCanonicalName()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.NullNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.TypeFactory: org.codehaus.jackson.type.JavaType _fromType(java.lang.reflect.Type,org.codehaus.jackson.map.type.TypeBindings)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.MapperConfig$Impl: org.codehaus.jackson.map.AnnotationIntrospector getAnnotationIntrospector()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.CollectionType: void init (java.lang.Class,org.codehaus.jackson.type.JavaType)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.MapType: java.lang.String buildCanonicalName()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.BinaryNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.MapType: int containedTypeCount()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.TextNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.ArrayType: void init (org.codehaus.jackson.type.JavaType,java.lang.Object)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.deser.std.StdDeserializer: java.lang.Object getEmptyValue()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.DoubleNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.MapType: java.lang.String containedTypeName(int)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.TypeBindings: void init (org.codehaus.jackson.map.type.TypeBindings,java.lang.Class,org.codehaus.jackson.type.JavaType)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.deser.BeanDeserializerFactory: org.codehaus.jackson.map.JsonDeserializer createArrayDeserializer(org.codehaus.jackson.map.DeserializationConfig,org.codehaus.jackson.map.DeserializerProvider,org.codehaus.jackson.map.type.ArrayType,org.codehaus.jackson.map.BeanProperty)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.ser.SerializerBase: java.lang.Class handledType()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.SerializationConfig: org.codehaus.jackson.type.JavaType constructType(java.lang.Class)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.node.DecimalNode: java.lang.String getValueAsText()</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.TypeBindings: void init (org.codehaus.jackson.type.JavaType)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.CollectionType: java.lang.String containedTypeName(int)</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.type.TypeFactory: org.codehaus.jackson.map.type.SimpleType _constructSimple(java.lang.Class,org.codehaus.jackson.type.JavaType[])</RiskMthd>
+        <RiskMthd>org.codehaus.jackson.map.ser.SerializerCache$TypeKey: java.lang.String toString()</RiskMthd>
+      </RiskMethods>
+    </conflict>
+    <conflict groupId-artifactId="javax.servlet:servlet-api" versions="2.5/2.3" riskLevel="1">
+      <versions>
+        <version versionId="2.5" loaded="true">
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + org.apache.tuscany.sca:tuscany-host-jetty:2.0::test + javax.servlet:servlet-api:2.5::test</path>
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + javax.servlet:servlet-api:2.5::provided</path>
+        </version>
+        <version versionId="2.3" loaded="false">
+          <path>org.apache.tuscany.sca:tuscany-binding-rest-runtime:2.0:: + httpunit:httpunit:1.7::test + javax.servlet:servlet-api:2.3::test</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+  </conflicts>
+</project>

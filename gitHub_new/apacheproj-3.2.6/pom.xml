@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2017, OpenSkywalking Organization All rights reserved.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  ~ Project repository: https://github.com/OpenSkywalking/skywalking
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.skywalking</groupId>
+    <artifactId>apm</artifactId>
+    <version>3.2.6-2017</version>
+
+    <developers>
+        <developer>
+            <name>Wu Sheng</name>
+            <email>wu.sheng@foxmail.com</email>
+            <url>https://github.com/wu-sheng</url>
+            <roles>
+                <role>Founder</role>
+                <role>PMC member</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Peng Yongsheng</name>
+            <url>https://github.com/peng-yongsheng</url>
+            <roles>
+                <role>PMC member</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Zhang Xin</name>
+            <url>https://github.com/ascrutae</url>
+            <roles>
+                <role>PMC member</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <modules>
+        <module>apm-commons</module>
+        <module>apm-sniffer</module>
+        <module>apm-application-toolkit</module>
+        <module>apm-network</module>
+        <module>apm-collector</module>
+    </modules>
+    <packaging>pom</packaging>
+
+    <name>apm</name>
+    <url>https://github.com/OpenSkywalking/skywalking</url>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/OpenSkywalking/skywalking/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>travis</system>
+        <url>https://travis-ci.org/wu-sheng/sky-walking</url>
+    </ciManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <compiler.version>1.8</compiler.version>
+        <scala.compiler.version>2.11.7</scala.compiler.version>
+        <powermock.version>1.6.4</powermock.version>
+        <docker.plugin.version>0.4.13</docker.plugin.version>
+        <checkstyle.header.file>java.header</checkstyle.header.file>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.6.0</version>
+                <executions>
+                    <execution>
+                        <id>install-jmxtools</id>
+                        <inherited>false</inherited>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mvn</executable>
+                            <arguments>
+                                <argument>install:install-file</argument>
+                                <argument>-Dfile=jmxtools-1.2.1.jar</argument>
+                                <argument>-DgroupId=com.sun.jdmk</argument>
+                                <argument>-DartifactId=jmxtools</argument>
+                                <argument>-Dversion=1.2.1</argument>
+                                <argument>-Dpackaging=jar</argument>
+                            </arguments>
+                            <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-ojdbc</id>
+                        <inherited>false</inherited>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mvn</executable>
+                            <arguments>
+                                <argument>install:install-file</argument>
+                                <argument>-Dfile=ojdbc14-10.2.0.4.0.jar</argument>
+                                <argument>-DgroupId=com.oracle</argument>
+                                <argument>-DartifactId=ojdbc14</argument>
+                                <argument>-Dversion=10.2.0.4.0</argument>
+                                <argument>-Dpackaging=jar</argument>
+                            </arguments>
+                            <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-resin</id>
+                        <inherited>false</inherited>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mvn</executable>
+                            <arguments>
+                                <argument>install:install-file</argument>
+                                <argument>-Dfile=resin-4.0.41.jar</argument>
+                                <argument>-DgroupId=com.caucho</argument>
+                                <argument>-DartifactId=resin</argument>
+                                <argument>-Dversion=4.0.41</argument>
+                                <argument>-Dpackaging=jar</argument>
+                            </arguments>
+                            <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-jmxri</id>
+                        <inherited>false</inherited>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mvn</executable>
+                            <arguments>
+                                <argument>install:install-file</argument>
+                                <argument>-Dfile=jmxri-1.2.1.jar</argument>
+                                <argument>-DgroupId=com.sun.jmx</argument>
+                                <argument>-DartifactId=jmxri</argument>
+                                <argument>-Dversion=1.2.1</argument>
+                                <argument>-Dpackaging=jar</argument>
+                            </arguments>
+                            <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-dubbox</id>
+                        <inherited>false</inherited>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>mvn</executable>
+                            <arguments>
+                                <argument>install:install-file</argument>
+                                <argument>-Dfile=dubbox-2.8.4.jar</argument>
+                                <argument>-DgroupId=com.alibaba</argument>
+                                <argument>-DartifactId=dubbox</argument>
+                                <argument>-Dversion=2.8.4</argument>
+                                <argument>-Dpackaging=jar</argument>
+                            </arguments>
+                            <workingDirectory>${project.basedir}/ci-dependencies</workingDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${compiler.version}</source>
+                    <target>${compiler.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+                <version>3.6.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.4.3</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <configuration>
+                    <skipDocker>true</skipDocker>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- 源码插件 -->
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <!-- 发布时自动将源码同时发布的配置 -->
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>none</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <version>2.4</version>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.3</version>
+            </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.1.0</version>
+                <configuration>
+                    <repoToken>lSwNTzlZBFIz3fmFntWGtc6BUwgU7dlms</repoToken>
+                    <sourceDirectories>
+                        <sourceDirectory>${project.build.sourceDirectory}</sourceDirectory>
+                    </sourceDirectories>
+                </configuration>
+            </plugin>
+            <!-- 覆盖率 -->
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.7.9</version>
+                <executions>
+                    <execution>
+                        <id>prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>${docker.plugin.version}</version>
+                <configuration>
+                    <skipDocker>true</skipDocker>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.17</version>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <configuration>
+                            <configLocation>checkStyle.xml</configLocation>
+                            <encoding>UTF-8</encoding>
+                            <consoleOutput>true</consoleOutput>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                            <failsOnError>true</failsOnError>
+                            <excludes>org/skywalking/apm/network/**/*.java,
+                                org/skywalking/apm/collector/remote/grpc/**/*.java,
+                                org/skywalking/apm/agent/core/context/ids/base64/*.java
+                            </excludes>
+                        </configuration>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

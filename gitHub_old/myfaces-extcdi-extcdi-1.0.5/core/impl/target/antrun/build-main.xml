@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="D:\ws\final_3\gitHub_old\myfaces-extcdi-extcdi-1.0.5\core\impl\target/apidocs/META-INF">
+    <fileset dir="D:\ws\final_3\gitHub_old\myfaces-extcdi-extcdi-1.0.5\core\impl">
+      <include name="LICENSE.txt"/>
+      <include name="NOTICE.txt"/>
+    </fileset>
+  </copy>
+</target>
+</project>

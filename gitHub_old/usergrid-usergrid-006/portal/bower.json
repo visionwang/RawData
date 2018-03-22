@@ -1,0 +1,30 @@
+{
+  "name": "usergrid-portal",
+  "version": "2.0.14",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt",
+    "js/",
+    "css/",
+    "img/",
+    "dist/appsvc-ui/archive",
+    "bower_components/",
+    "scripts/",
+    "sdk/",
+    "tests/",
+    "Gruntfile.js",
+    "*.md",
+    "config.js",
+    "package.json",
+    "LICENSE",
+    ".gitignore"
+  ],
+  "dependencies": {
+    "angular-intro.js": "~1.0.3",
+    "sizzle": "1.10.16"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "usergrid"
+  ]
+}

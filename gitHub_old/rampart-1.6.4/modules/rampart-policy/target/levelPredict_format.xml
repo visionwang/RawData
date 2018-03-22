@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project projectInfo="org.apache.rampart:rampart-policy:1.6.4@D:\ws\final_3\gitHub_old\rampart-1.6.4\modules\rampart-policy\pom.xml">
+  <conflicts type="jar">
+    <conflict groupId-artifactId="commons-logging:commons-logging" versions="1.1.1/1.2/1.0.4" riskLevel="1">
+      <versions>
+        <version versionId="1.1.1" loaded="true">
+          <path>org.apache.rampart:rampart-policy:1.6.4:: + org.apache.axis2:axis2-kernel:1.6.4::compile + org.apache.woden:woden-impl-dom:1.0M9::compile + org.apache.woden:woden-impl-commons:1.0M9::compile + commons-logging:commons-logging:1.1.1::compile</path>
+          <path>org.apache.rampart:rampart-policy:1.6.4:: + org.apache.axis2:axis2-kernel:1.6.4::compile + commons-logging:commons-logging:1.1.1::compile</path>
+        </version>
+        <version versionId="1.2" loaded="false">
+          <path>org.apache.rampart:rampart-policy:1.6.4:: + org.apache.axis2:axis2-kernel:1.6.4::compile + org.apache.ws.commons.axiom:axiom-impl:1.2.15::runtime + commons-logging:commons-logging:1.2::runtime</path>
+          <path>org.apache.rampart:rampart-policy:1.6.4:: + org.apache.ws.commons.axiom:axiom-api:1.2.15::compile + commons-logging:commons-logging:1.2::compile</path>
+        </version>
+        <version versionId="1.0.4" loaded="false">
+          <path>org.apache.rampart:rampart-policy:1.6.4:: + org.apache.axis2:axis2-kernel:1.6.4::compile + commons-httpclient:commons-httpclient:3.1::compile + commons-logging:commons-logging:1.0.4::compile</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+  </conflicts>
+</project>

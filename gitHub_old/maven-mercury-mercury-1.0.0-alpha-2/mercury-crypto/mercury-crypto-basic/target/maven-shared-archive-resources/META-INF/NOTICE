@@ -1,0 +1,30 @@
+// ------------------------------------------------------------------
+// NOTICE file corresponding to the section 4d of The Apache License,
+// Version 2.0, in this case for Mercury Crypto Basics
+// ------------------------------------------------------------------
+
+Mercury Crypto Basics
+Copyright 2002-2018 The Apache Software Foundation
+
+This product includes/uses software(s) developed by 'an unknown organization'
+  - bcpg-jdk15
+  - Legion of the Bouncy Castle Java Cryptography APIs (http://www.bouncycastle.org/java.html)
+  - log4j
+  - Plexus language bundle access component
+
+This product includes/uses software(s) developed by 'Codehaus' (http://www.codehaus.org/)
+  - Plexus Classworlds
+  - Plexus :: Default Container
+  - Plexus Common Utilities (http://plexus.codehaus.org/plexus-utils)
+
+This product includes/uses software(s) developed by 'Google' (http://www.google.com)
+  - google-collect (http://code.google.com/p/google-collections/)
+
+This product includes/uses software(s) developed by 'The Apache Software Foundation' (http://jakarta.apache.org)
+  - Logging (http://jakarta.apache.org/commons/logging/)
+
+This product includes/uses software(s) developed by 'The Apache Software Foundation' (http://www.apache.org/)
+  - Mercury Crypto APIs (http://maven.apache.org/mercury/mercury-crypto/mercury-crypto-api/)
+  - Apache XBean :: Reflect (http://geronimo.apache.org/xbean/xbean-reflect)
+
+

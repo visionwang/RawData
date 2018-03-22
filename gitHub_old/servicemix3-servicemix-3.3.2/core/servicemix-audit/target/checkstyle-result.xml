@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="4.4">
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\AbstractAuditor.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\AuditorException.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\AuditorMBean.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\AuditorQueryMBean.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\file\FileAuditor.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\file\FileAuditorStrategy.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\file\TeeInputStream.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\jdbc\JdbcAuditor.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\lucene\DefaultLuceneCallback.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\lucene\LuceneAuditor.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\lucene\LuceneCallback.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\main\java\org\apache\servicemix\jbi\audit\lucene\LuceneIndexer.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\test\java\org\apache\servicemix\jbi\audit\file\FileAuditorTest.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\test\java\org\apache\servicemix\jbi\audit\file\TeeInputStreamTest.java">
+</file>
+<file name="D:\ws\final_3\gitHub_old\servicemix3-servicemix-3.3.2\core\servicemix-audit\src\test\java\org\apache\servicemix\jbi\audit\jdbc\JdbcAuditorTest.java">
+</file>
+</checkstyle>

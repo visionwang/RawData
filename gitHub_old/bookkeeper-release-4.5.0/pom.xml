@@ -1,0 +1,335 @@
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <parent>
+    <groupId>org.apache</groupId>
+    <artifactId>apache</artifactId>
+    <version>18</version>
+  </parent>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.apache.bookkeeper</groupId>
+  <version>4.5.0</version>
+  <artifactId>bookkeeper</artifactId>
+  <packaging>pom</packaging>
+  <name>Apache BookKeeper :: Parent</name>
+  <url>http://bookkeeeper.apache.org</url>
+  <inceptionYear>2011</inceptionYear>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:https://github.com/apache/bookkeeper.git</connection>
+    <developerConnection>scm:git:https://github.com/apache/bookkeeper.git</developerConnection>
+    <url>https://github.com/apache/bookkeeper</url>
+    <tag>release-4.5.0</tag>
+  </scm>
+  <issueManagement>
+    <system>JIRA</system>
+    <url>https://issues.apache.org/jira/browse/BOOKKEEPER</url>
+  </issueManagement>
+  <ciManagement>
+    <system>Jenkins</system>
+    <url>https://builds.apache.org/job/bookkeeper-master</url>
+  </ciManagement>
+  <modules>
+    <module>buildtools</module>
+    <module>compat-deps</module>
+    <module>bookkeeper-stats</module>
+    <module>bookkeeper-server</module>
+    <module>bookkeeper-benchmark</module>
+    <module>bookkeeper-stats-providers</module>
+  </modules>
+  <mailingLists>
+    <mailingList>
+      <name>BookKeeper User</name>
+      <subscribe>user-subscribe@bookkeeper.apache.org</subscribe>
+      <unsubscribe>user-unsubscribe@bookkeeper.apache.org</unsubscribe>
+      <post>user@bookkeeper.apache.org</post>
+      <archive>http://www.mail-archive.com/user@bookkeeper.apache.org</archive>
+    </mailingList>
+    <mailingList>
+      <name>BookKeeper Dev</name>
+      <subscribe>dev-subscribe@bookkeeper.apache.org</subscribe>
+      <unsubscribe>dev-unsubscribe@bookkeeper.apache.org</unsubscribe>
+      <post>dev@bookkeeper.apache.org</post>
+      <archive>http://www.mail-archive.com/dev@bookkeeper.apache.org</archive>
+    </mailingList>
+    <mailingList>
+      <name>BookKeeper Commits</name>
+      <subscribe>commits-subscribe@bookkeeper.apache.org</subscribe>
+      <unsubscribe>commits-unsubscribe@bookkeeper.apache.org</unsubscribe>
+      <post>commits@bookkeeper.apache.org</post>
+      <archive>http://www.mail-archive.com/commits@bookkeeper.apache.org</archive>
+    </mailingList>
+  </mailingLists>
+  <developers>
+    <developer>
+      <name>The Apache BookKeeper Team</name>
+      <email>dev@bookkeeper.apache.org</email>
+      <url>http://bookkeeper.apache.org</url>
+      <organization>Apache Software Foundation</organization>
+      <organizationUrl>http://www.apache.org</organizationUrl>
+    </developer>
+  </developers>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <!-- dependencies -->
+    <guava.version>20.0</guava.version>
+    <hamcrest.version>1.3</hamcrest.version>
+    <junit.version>4.12</junit.version>
+    <protobuf.version>2.6.1</protobuf.version>
+    <netty.version>4.1.12.Final</netty.version>
+    <netty-boringssl.version>2.0.3.Final</netty-boringssl.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <zookeeper.version>3.5.3-beta</zookeeper.version>
+    <!-- plugin dependencies -->
+    <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
+    <puppycrawl.checkstyle.version>6.19</puppycrawl.checkstyle.version>
+    <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
+    <maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+    <maven-source-plugin.version>2.2.1</maven-source-plugin.version>
+  </properties>
+
+  <!-- dependencies for all modules -->
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- Needed by junit -->
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-all</artifactId>
+      <version>${hamcrest.version}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>${findbugs-maven-plugin.version}</version>
+        <configuration>
+          <excludeFilterFile>${session.executionRootDirectory}/buildtools/src/main/resources/bookkeeper/findbugsExclude.xml</excludeFilterFile>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.eluder.coveralls</groupId>
+        <artifactId>coveralls-maven-plugin</artifactId>
+        <version>4.3.0</version>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>cobertura-maven-plugin</artifactId>
+        <version>2.7</version>
+        <configuration>
+         <formats>
+          <format>html</format>
+          <format>xml</format>
+         </formats>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <compilerArgs>
+            <compilerArg>-Werror</compilerArg>
+            <compilerArg>-Xlint:deprecation</compilerArg>
+            <compilerArg>-Xlint:unchecked</compilerArg>
+	  </compilerArgs>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.19.1</version>
+        <configuration>
+          <argLine>-Xmx2G -Djava.net.preferIPv4Stack=true</argLine>
+	  <redirectTestOutputToFile>true</redirectTestOutputToFile>
+	  <reuseForks>false</reuseForks>
+	  <forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven-javadoc-plugin.version}</version>
+        <configuration>
+          <!-- Prevent missing javadoc comments from being marked as errors -->
+          <additionalparam>-Xdoclint:none -notimestamp</additionalparam>
+          <subpackages>org.apache.bookkeeper.client:org.apache.bookkeeper.common.annotation:org.apache.bookkeeper.conf:org.apache.bookkeeper.feature:org.apache.bookkeeper.stats</subpackages>
+          <groups>
+            <group>
+              <title>Bookkeeper Client</title>
+              <packages>org.apache.bookkeeper.client:org.apache.bookkeeper.common.annotation:org.apache.bookkeeper.conf:org.apache.bookkeeper.feature</packages>
+            </group>
+            <group>
+              <title>Bookkeeper Stats API</title>
+              <!-- currently codahale and prometheus are placed under `stats` package unfortunately.
+                   we might consider rename them to their own packages in future. -->
+              <packages>org.apache.bookkeeper.stats</packages>
+            </group>
+            <group>
+              <title>Bookkeeper Stats Providers</title>
+              <packages>org.apache.bookkeeper.stats.twitter.finagle:org.apache.bookkeeper.stats.twitter.ostrich:org.apache.bookkeeper.stats.twitter.science</packages>
+            </group>
+          </groups>
+          <doctitle>BookKeeper Java API (version ${project.version})</doctitle>
+          <overview>site/_site/overview/index.html</overview>
+          <show>package</show>
+        </configuration>
+        <executions>
+          <execution>
+            <id>aggregate</id>
+            <goals>
+              <goal>aggregate</goal>
+            </goals>
+            <phase>site</phase>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>${maven-source-plugin.version}</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.2.1</version>
+        <configuration>
+	  <tarLongFileMode>gnu</tarLongFileMode>
+          <descriptors>
+            <descriptor>src/assemble/src.xml</descriptor>
+          </descriptors>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.rat</groupId>
+        <artifactId>apache-rat-plugin</artifactId>
+        <version>0.12</version>
+        <configuration>
+          <excludes>
+            <exclude>.git/**/*</exclude>
+            <exclude>.github/**/*</exclude>
+            <exclude>**/target/**/*</exclude>
+            <exclude>**/.svn/**/*</exclude>
+            <exclude>CHANGES.txt</exclude>
+            <exclude>**/README.md</exclude>
+            <exclude>**/apidocs/*</exclude>
+            <exclude>test-patch/**/*</exclude>
+            <exclude>**/.classpath</exclude>
+            <exclude>**/.gitignore</exclude>
+            <exclude>**/.project</exclude>
+            <exclude>**/.settings/*</exclude>
+            <exclude>site/**</exclude>
+            <exclude>.repository/**</exclude>
+          </excludes>
+          <consoleOutput>true</consoleOutput>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jxr-plugin</artifactId>
+        <version>2.1</version>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <linkXref>true</linkXref>
+          <targetJdk>1.6</targetJdk>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+  <profiles>
+    <profile>
+      <!-- Used only when cutting a full release.  Configures the deploy plugin to mark
+          each artifact as a release (especially important for the archetype). Signs each
+          file deployed (it actually signs way too many files and we have to clean up a bit
+          once deployed). -->
+      <id>deploy</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <configuration>
+              <useAgent>true</useAgent>
+            </configuration>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <update-release-info>true</update-release-info>
+        <!--  Don't re-run tests as part of the deploy build.
+              Note we use skipTests, not maven.test.skip, since the latter skips
+              compilation too and we want to deploy tests. -->
+        <skipTests>true</skipTests>
+      </properties>
+    </profile>
+    <profile>
+      <id>consoleTestOutput</id>
+      <build>
+	<plugins>
+	  <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <configuration>
+	      <redirectTestOutputToFile>true</redirectTestOutputToFile>
+            </configuration>
+	  </plugin>
+	</plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>

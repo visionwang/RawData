@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project projectInfo="org.apache.derbyBuild:JiraSOAP:LATEST@D:\ws\final_3\gitHub_old\derby-10.11.1.1\tools\release\jirasoap\pom.xml">
+  <conflicts type="jar">
+    <conflict groupId:artifactId="commons-logging:commons-logging" versions="1.1.1/1.0.4" riskLevel="1">
+      <versions>
+        <version versionId="1.1.1" loaded="true">
+          <path>org.apache.derbyBuild:JiraSOAP:LATEST:: + commons-logging:commons-logging:1.1.1::compile</path>
+        </version>
+        <version versionId="1.0.4" loaded="false">
+          <path>org.apache.derbyBuild:JiraSOAP:LATEST:: + commons-discovery:commons-discovery:0.4::compile + commons-logging:commons-logging:1.0.4::compile</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+  </conflicts>
+</project>

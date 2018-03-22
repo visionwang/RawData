@@ -1,0 +1,27 @@
+h3. Elements By Type
+
+{anchor:fileAuditor-element}
+h3. The _[<fileAuditor>|#fileAuditor-element]_ Element
+    {html}The Auditor of message exchanges to a directory{html}
+h4. Properties
+    || Property Name || Type || Description ||
+    | asContainerListener | _boolean_ | {html}Test if Auditor should be included as a container listener{html} |
+    | container | _org.apache.servicemix.jbi.container.JBIContainer_ | {html}{html} |
+    | directory | _java.io.File_ | {html}The directory used for storing the audited messages{html} |
+    | propertyChangeListener | _java.beans.PropertyChangeListener_ | {html}{html} |
+
+{anchor:jdbcAuditor-element}
+h3. The _[<jdbcAuditor>|#jdbcAuditor-element]_ Element
+    {html}The Auditor of message exchanges to a JDBC database{html}
+h4. Properties
+    || Property Name || Type || Description ||
+    | asContainerListener | _boolean_ | {html}Test if Auditor should be included as a container listener{html} |
+    | autoStart | _boolean_ | {html}{html} |
+    | container | _org.apache.servicemix.jbi.container.JBIContainer_ | {html}{html} |
+    | dataSource | _javax.sql.DataSource_ | {html}{html} |
+    | propertyChangeListener | _java.beans.PropertyChangeListener_ | {html}{html} |
+
+h3. Element Index
+    | _[<fileAuditor>|#fileAuditor-element]_ | {html}The Auditor of message exchanges to a directory{html} |
+    | _[<jdbcAuditor>|#jdbcAuditor-element]_ | {html}The Auditor of message exchanges to a JDBC database{html} |
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project projectInfo="org.apache.struts.xwork:xwork-core:2.2.1.1@D:\ws\final_3\gitHub_old\struts2-STRUTS_2_2_1_1\xwork-core\dependency-reduced-pom.xml">
+  <conflicts type="jar">
+    <conflict groupId-artifactId="junit:junit" versions="4.8.2/3.8.1" riskLevel="1">
+      <versions>
+        <version versionId="4.8.2" loaded="true">
+          <path>org.apache.struts.xwork:xwork-core:2.2.1.1:: + junit:junit:4.8.2::compile</path>
+        </version>
+        <version versionId="3.8.1" loaded="false">
+          <path>org.apache.struts.xwork:xwork-core:2.2.1.1:: + org.testng:testng:5.1:jdk15:compile + junit:junit:3.8.1::compile</path>
+          <path>org.apache.struts.xwork:xwork-core:2.2.1.1:: + org.springframework:spring-test:2.5.6::test + junit:junit:3.8.1::test</path>
+        </version>
+      </versions>
+      <RiskMethods tip="method that may be used but will not be loaded !"/>
+    </conflict>
+  </conflicts>
+</project>

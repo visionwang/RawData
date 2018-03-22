@@ -1,0 +1,5 @@
+Soot started on Sat Mar 17 11:20:40 CST 2018
+Warning: using incomplete callgraph containing only application classes.
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+Soot finished on Sat Mar 17 11:20:43 CST 2018
+Soot has run for 0 min. 3 sec.

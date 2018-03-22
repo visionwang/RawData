@@ -41,20 +41,4 @@ Execute the following cmd command:
 D:\plugin-decca\apache-maven-3.2.5\bin\mvn.bat -f=D:\rawData\gitHub_old\abdera-abdera-1.1.2-RC2\extensions\features package -Dmaven.test.skip=true neu.lab:decca:1.0:detect
 
 
-The results of Decca
-
-<project project="Project name" projectInfo=" Absolute path of the project">
-  <conflicts>
-    <conflictJar groupId-artifactId="Conflicting JAR name" versions="Version No." riskLevel="Warning level"">
-      <versions>
-        <version versionId="Unloaded conflicting version" loaded="false">
-          <path>Dependency path from host project to unloaded JAR</path>
-        </version>
-      </versions>
-      <RiskMethods tip="method that may be used but will not be loaded !">
-        <RiskMthd>the referenced feature set but will not be loaded</RiskMthd>
-      </RiskMethods>
-    </conflictJar>
-  </conflicts>
-</project>
 
